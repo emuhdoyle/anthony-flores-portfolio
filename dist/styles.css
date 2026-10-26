@@ -42,4 +42,6 @@ dialog{margin:0;padding:0 var(--pad) 35px;background:var(--bg);color:var(--text)
 
 .about-dialog .dialog-header.is-hidden{transform:translateY(-100%);pointer-events:none}
 
-.external-arrow{display:inline-block;width:.64em;height:.64em;vertical-align:.04em;fill:none;overflow:visible}
+.external-arrow{display:inline-block;width:.64em;height:.64em;vertical-align:.04em;fill:none;overflow:visible;transition:transform .2s var(--ease)}
+
+a:hover .external-arrow{transform:rotate(45deg)}
