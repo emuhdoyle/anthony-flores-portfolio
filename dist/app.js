@@ -123,7 +123,11 @@ function openLightbox(item) {
     link.href = item.videoUrl;
     link.target = '_blank';
     link.rel = 'noopener noreferrer';
-    link.textContent = 'Open video in Google Drive ↗';
+    link.textContent = 'Open video in Google Drive';
+    const arrow = document.createElement('span');
+    arrow.className = 'external-arrow';
+    arrow.setAttribute('aria-hidden', 'true');
+    link.append('\u00a0', arrow);
     caption.append(link);
   } else {
     const source = getImage(item);

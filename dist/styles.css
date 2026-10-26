@@ -41,3 +41,5 @@ dialog{margin:0;padding:0 var(--pad) 35px;background:var(--bg);color:var(--text)
 .about-dialog .dialog-header{transition:transform .25s var(--ease);justify-content:space-between;align-items:flex-start;padding-top:var(--header-padding-top);font-size:var(--header-font-size);letter-spacing:var(--header-letter-spacing);line-height:1.2}.about-dialog .dialog-header .name{margin:0;font-size:inherit;font-weight:400;letter-spacing:inherit;line-height:inherit}
 
 .about-dialog .dialog-header.is-hidden{transform:translateY(-100%);pointer-events:none}
+
+.external-arrow{display:inline-block;width:1em;height:1em;vertical-align:-.12em;background:currentColor;-webkit-mask:url("assets/branding/arrow.svg") center/contain no-repeat;mask:url("assets/branding/arrow.svg") center/contain no-repeat}
