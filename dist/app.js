@@ -124,18 +124,8 @@ function openLightbox(item) {
     link.target = '_blank';
     link.rel = 'noopener noreferrer';
     link.textContent = 'Open video in Google Drive';
-    const svgNamespace = 'http://www.w3.org/2000/svg';
-    const arrow = document.createElementNS(svgNamespace, 'svg');
-    arrow.setAttribute('class', 'external-arrow');
-    arrow.setAttribute('viewBox', '0 0 10 10');
-    arrow.setAttribute('fill', 'none');
-    arrow.setAttribute('aria-hidden', 'true');
-    arrow.setAttribute('focusable', 'false');
-    const path = document.createElementNS(svgNamespace, 'path');
-    path.setAttribute('d', 'M1.61538 1H9M9 1V8.38462M9 1L1 9');
-    path.setAttribute('stroke', 'currentColor');
-    path.setAttribute('stroke-width', '1.25');
-    arrow.append(path);
+    const arrowDocument = new DOMParser().parseFromString("<svg class=\"external-arrow\" aria-hidden=\"true\" focusable=\"false\" width=\"10\" height=\"10\" viewBox=\"0 0 10 10\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><g clip-path=\"url(#ant-arrow-video-clip)\"><path d=\"M9 8.38462V1H1.61538M9 1L1 9\" stroke-width=\"1.25\" stroke=\"currentColor\"/><rect x=\"8.86133\" y=\"0.375\" width=\"0.765625\" height=\"0.765625\" fill=\"currentColor\"/></g><defs><clipPath id=\"ant-arrow-video-clip\"><rect width=\"10\" height=\"10\" fill=\"currentColor\"/></clipPath></defs></svg>", 'image/svg+xml');
+    const arrow = document.importNode(arrowDocument.documentElement, true);
     link.append('\u00a0', arrow);
     caption.append(link);
   } else {
