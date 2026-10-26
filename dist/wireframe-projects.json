@@ -1,0 +1,572 @@
+[
+  {
+    "id": "01",
+    "title": "The Time of Our Lives",
+    "client": "Lancey",
+    "category": "Vinyl, CD & merchandise design",
+    "items": [
+      {
+        "id": "01.01",
+        "label": "Lancey — Vinyl",
+        "image": "assets/lancey-time-of-our-lives/01-vinyl.webp",
+        "thumbnail": "assets/lancey-time-of-our-lives/01-vinyl-thumb.webp",
+        "width": 1800,
+        "height": 1800,
+        "thumbnailFrame": "product",
+        "captionType": "VINYL"
+      },
+      {
+        "id": "01.02",
+        "label": "Lancey — Tracklist",
+        "image": "assets/lancey-time-of-our-lives/02-tracklist.webp",
+        "thumbnail": "assets/lancey-time-of-our-lives/02-tracklist-thumb.webp",
+        "width": 1500,
+        "height": 1500,
+        "captionType": "TRACKS"
+      },
+      {
+        "id": "01.03",
+        "label": "Lancey — CD",
+        "image": "assets/lancey-time-of-our-lives/03-cd.webp",
+        "thumbnail": "assets/lancey-time-of-our-lives/03-cd-thumb.webp",
+        "width": 1410,
+        "height": 1410,
+        "thumbnailFrame": "product",
+        "captionType": "CD"
+      },
+      {
+        "id": "01.04",
+        "label": "Lancey — CD sleeve",
+        "image": "assets/lancey-time-of-our-lives/04-cd-sleeve.webp",
+        "thumbnail": "assets/lancey-time-of-our-lives/04-cd-sleeve-thumb.webp",
+        "width": 1604,
+        "height": 736,
+        "captionType": "SLEEVE"
+      },
+      {
+        "id": "01.05",
+        "label": "Lancey — CD booklet",
+        "image": "assets/lancey-time-of-our-lives/05-cd-booklet.webp",
+        "thumbnail": "assets/lancey-time-of-our-lives/05-cd-booklet-thumb.webp",
+        "width": 1536,
+        "height": 772,
+        "captionType": "BOOK"
+      },
+      {
+        "id": "01.06",
+        "label": "Lancey — Cassette",
+        "image": "assets/lancey-time-of-our-lives/06-cassette.webp",
+        "thumbnail": "assets/lancey-time-of-our-lives/06-cassette-thumb.webp",
+        "width": 1500,
+        "height": 1500,
+        "thumbnailFrame": "product",
+        "captionType": "TAPE"
+      },
+      {
+        "id": "01.07",
+        "label": "Lancey — Bundle",
+        "image": "assets/lancey-time-of-our-lives/07-bundle.webp",
+        "thumbnail": "assets/lancey-time-of-our-lives/07-bundle-thumb.webp",
+        "width": 1800,
+        "height": 1800,
+        "captionType": "BUNDLE"
+      }
+    ],
+    "captionPrefix": "LANCEY"
+  },
+  {
+    "id": "02",
+    "title": "My 21st Century Blues",
+    "client": "RAYE",
+    "category": "Vinyl, CD, merchandise & OOH",
+    "items": [
+      {
+        "id": "02.01",
+        "label": "RAYE — Vinyl",
+        "image": "assets/raye-my-21st-century-blues/01-vinyl.webp",
+        "thumbnail": "assets/raye-my-21st-century-blues/01-vinyl-thumb.webp",
+        "width": 1000,
+        "height": 967,
+        "thumbnailFrame": "product",
+        "captionType": "VINYL"
+      },
+      {
+        "id": "02.02",
+        "label": "RAYE — Single artwork",
+        "image": "assets/raye-my-21st-century-blues/02-single-artwork.webp",
+        "thumbnail": "assets/raye-my-21st-century-blues/02-single-artwork-thumb.webp",
+        "width": 1440,
+        "height": 1440,
+        "captionType": "SINGLE"
+      },
+      {
+        "id": "02.03",
+        "label": "RAYE — Campaign artwork",
+        "image": "assets/raye-my-21st-century-blues/03-campaign-artwork.webp",
+        "thumbnail": "assets/raye-my-21st-century-blues/03-campaign-artwork-thumb.webp",
+        "width": 1440,
+        "height": 1800,
+        "captionType": "ARTWORK"
+      },
+      {
+        "id": "02.04",
+        "label": "RAYE — Bus wrap",
+        "image": "assets/raye-my-21st-century-blues/04-bus-wrap.webp",
+        "thumbnail": "assets/raye-my-21st-century-blues/04-bus-wrap-thumb.webp",
+        "width": 1282,
+        "height": 1800,
+        "thumbnailFrame": "photo",
+        "thumbnailPosition": "50% 58%",
+        "captionType": "OOH"
+      },
+      {
+        "id": "02.05",
+        "label": "RAYE — Sweatshirts",
+        "image": "assets/raye-my-21st-century-blues/05-sweatshirts.webp",
+        "thumbnail": "assets/raye-my-21st-century-blues/05-sweatshirts-thumb.webp",
+        "width": 1390,
+        "height": 1800,
+        "thumbnailFrame": "product",
+        "captionType": "MERCH"
+      },
+      {
+        "id": "02.06",
+        "label": "RAYE — CD",
+        "image": "assets/raye-my-21st-century-blues/06-cd.webp",
+        "thumbnail": "assets/raye-my-21st-century-blues/06-cd-thumb.webp",
+        "width": 1440,
+        "height": 1800,
+        "thumbnailFrame": "product",
+        "captionType": "CD"
+      },
+      {
+        "id": "02.07",
+        "label": "RAYE — White T-shirt",
+        "image": "assets/raye-my-21st-century-blues/07-white-t-shirt.webp",
+        "thumbnail": "assets/raye-my-21st-century-blues/07-white-t-shirt-thumb.webp",
+        "width": 793,
+        "height": 807,
+        "thumbnailFrame": "product",
+        "captionType": "TSHIRT"
+      },
+      {
+        "id": "02.08",
+        "label": "RAYE — Merchandise",
+        "image": "assets/raye-my-21st-century-blues/08-merchandise.webp",
+        "thumbnail": "assets/raye-my-21st-century-blues/08-merchandise-thumb.webp",
+        "width": 1170,
+        "height": 1432,
+        "thumbnailFrame": "photo",
+        "thumbnailPosition": "50% 58%",
+        "captionType": "MERCH"
+      },
+      {
+        "id": "02.09",
+        "label": "RAYE — CD packaging",
+        "image": "assets/raye-my-21st-century-blues/09-cd-packaging.webp",
+        "thumbnail": "assets/raye-my-21st-century-blues/09-cd-packaging-thumb.webp",
+        "width": 894,
+        "height": 894,
+        "thumbnailFrame": "product",
+        "captionType": "CD_PACK"
+      },
+      {
+        "id": "02.10",
+        "label": "RAYE — Billboard",
+        "image": "assets/raye-my-21st-century-blues/10-billboard.webp",
+        "thumbnail": "assets/raye-my-21st-century-blues/10-billboard-thumb.webp",
+        "width": 1800,
+        "height": 1800,
+        "thumbnailFrame": "photo",
+        "thumbnailPosition": "50% 52%",
+        "captionType": "OOH"
+      }
+    ],
+    "thumbnailBackground": "#ECECEC",
+    "captionPrefix": "RAYE"
+  },
+  {
+    "id": "03",
+    "title": "Papa Donde Estás",
+    "client": "Eva Ruiz",
+    "category": "Single artwork",
+    "items": [
+      {
+        "id": "03.01",
+        "label": "Eva Ruiz — Lettering",
+        "image": "assets/eva-ruiz-single-artworks/01-lettering.webp",
+        "thumbnail": "assets/eva-ruiz-single-artworks/01-lettering-thumb.webp",
+        "width": 1800,
+        "height": 1800,
+        "captionType": "TYPE"
+      },
+      {
+        "id": "03.02",
+        "label": "Eva Ruiz — Typography",
+        "image": "assets/eva-ruiz-single-artworks/02-typography.webp",
+        "thumbnail": "assets/eva-ruiz-single-artworks/02-typography-thumb.webp",
+        "width": 1800,
+        "height": 1800,
+        "captionType": "TYPE"
+      },
+      {
+        "id": "03.03",
+        "label": "Eva Ruiz — Papa Donde Estás",
+        "image": "assets/eva-ruiz-single-artworks/03-papa-donde-estas.webp",
+        "thumbnail": "assets/eva-ruiz-single-artworks/03-papa-donde-estas-thumb.webp",
+        "width": 1800,
+        "height": 1800,
+        "captionType": "ARTWORK"
+      }
+    ],
+    "captionPrefix": "EVA"
+  },
+  {
+    "id": "04",
+    "title": "Ahora Que Puedo",
+    "client": "Eva Ruiz",
+    "category": "Single artwork",
+    "items": [
+      {
+        "id": "04.01",
+        "label": "Eva Ruiz — Artwork collage",
+        "image": "assets/eva-ruiz-single-artworks/04-artwork-collage.webp",
+        "thumbnail": "assets/eva-ruiz-single-artworks/04-artwork-collage-thumb.webp",
+        "width": 1349,
+        "height": 1800,
+        "captionType": "COLLAGE"
+      },
+      {
+        "id": "04.02",
+        "label": "Eva Ruiz — Ahora Que Puedo",
+        "image": "assets/eva-ruiz-single-artworks/05-ahora-que-puedo.webp",
+        "thumbnail": "assets/eva-ruiz-single-artworks/05-ahora-que-puedo-thumb.webp",
+        "width": 1800,
+        "height": 1800,
+        "captionType": "ARTWORK"
+      }
+    ],
+    "captionPrefix": "EVA"
+  },
+  {
+    "id": "05",
+    "title": "Goodwood Festival of Speed 2026",
+    "client": "CUPRA × Club Blue",
+    "category": "Creative direction & design",
+    "items": [
+      {
+        "id": "05.01",
+        "label": "CUPRA × Club Blue — Poster",
+        "image": "assets/cupra-club-blue-goodwood-2026/01-poster.webp",
+        "thumbnail": "assets/cupra-club-blue-goodwood-2026/01-poster-thumb.webp",
+        "width": 1080,
+        "height": 1440,
+        "captionType": "POSTER"
+      },
+      {
+        "id": "05.02",
+        "label": "CUPRA × Club Blue — Black T-shirt",
+        "image": "assets/cupra-club-blue-goodwood-2026/02-black-t-shirt.webp",
+        "thumbnail": "assets/cupra-club-blue-goodwood-2026/02-black-t-shirt-thumb.webp",
+        "width": 1800,
+        "height": 1800,
+        "thumbnailFrame": "product",
+        "captionType": "TSHIRT"
+      },
+      {
+        "id": "05.03",
+        "label": "CUPRA × Club Blue — White T-shirt",
+        "image": "assets/cupra-club-blue-goodwood-2026/03-white-t-shirt.webp",
+        "thumbnail": "assets/cupra-club-blue-goodwood-2026/03-white-t-shirt-thumb.webp",
+        "width": 1800,
+        "height": 1800,
+        "thumbnailFrame": "product",
+        "captionType": "TSHIRT"
+      },
+      {
+        "id": "05.04",
+        "label": "CUPRA × Club Blue — Event photography",
+        "image": "assets/cupra-club-blue-goodwood-2026/04-event-photography.webp",
+        "thumbnail": "assets/cupra-club-blue-goodwood-2026/04-event-photography-thumb.webp",
+        "width": 1200,
+        "height": 1800,
+        "thumbnailFrame": "photo",
+        "thumbnailPosition": "50% 78%",
+        "captionType": "EVENT"
+      }
+    ],
+    "captionPrefix": "CUPRA"
+  },
+  {
+    "id": "06",
+    "title": "Wireless Festival, Lancey Foux",
+    "client": "Wireless Music Festival",
+    "category": "Stage visuals & design",
+    "items": [
+      {
+        "id": "06.01",
+        "label": "Lancey Foux — Stage visuals 01",
+        "image": "assets/wireless-festival-lancey-foux/01-stage-visuals.webp",
+        "thumbnail": "assets/wireless-festival-lancey-foux/01-stage-visuals-thumb.webp",
+        "width": 1800,
+        "height": 1013,
+        "thumbnailFrame": "photo",
+        "thumbnailPosition": "50% 50%",
+        "captionType": "WIRELESS"
+      },
+      {
+        "id": "06.02",
+        "label": "Lancey Foux — Stage visuals 02",
+        "image": "assets/wireless-festival-lancey-foux/02-stage-visuals.webp",
+        "thumbnail": "assets/wireless-festival-lancey-foux/02-stage-visuals-thumb.webp",
+        "width": 1800,
+        "height": 1013,
+        "thumbnailFrame": "photo",
+        "thumbnailPosition": "50% 50%",
+        "captionType": "WIRELESS"
+      }
+    ],
+    "captionPrefix": "LANCEY"
+  },
+  {
+    "id": "07",
+    "title": "Club Blue — Lost Night Club",
+    "client": "Lost Night Club",
+    "category": "Event flyers & merchandise",
+    "items": [
+      {
+        "id": "07.01",
+        "label": "Club Blue — Event flyer",
+        "image": "assets/lost-night-club-club-blue/01-event-flyer.webp",
+        "thumbnail": "assets/lost-night-club-club-blue/01-event-flyer-thumb.webp",
+        "width": 1440,
+        "height": 1800,
+        "captionType": "FLYER"
+      },
+      {
+        "id": "07.02",
+        "label": "Club Blue — Lettering",
+        "image": "assets/lost-night-club-club-blue/02-lettering.webp",
+        "thumbnail": "assets/lost-night-club-club-blue/02-lettering-thumb.webp",
+        "width": 1800,
+        "height": 1800,
+        "captionType": "TYPE"
+      },
+      {
+        "id": "07.03",
+        "label": "Club Blue — T-shirt",
+        "image": "assets/lost-night-club-club-blue/03-t-shirt.webp",
+        "thumbnail": "assets/lost-night-club-club-blue/03-t-shirt-thumb.webp",
+        "width": 1800,
+        "height": 1800,
+        "thumbnailFrame": "product",
+        "captionType": "MERCH"
+      }
+    ],
+    "captionPrefix": "CLUBBLUE"
+  },
+  {
+    "id": "08",
+    "title": "Life in Hell / Back2DaTrap",
+    "client": "Lancey",
+    "category": "Artworks, merchandise & stage visuals",
+    "items": [
+      {
+        "id": "08.01",
+        "label": "Lancey — Merchandise display",
+        "image": "assets/lancey-life-in-hell-back2datrap/01-merchandise-display.webp",
+        "thumbnail": "assets/lancey-life-in-hell-back2datrap/01-merchandise-display-thumb.webp",
+        "width": 1350,
+        "height": 1800,
+        "thumbnailFrame": "photo",
+        "thumbnailPosition": "50% 45%",
+        "captionType": "DISPLAY"
+      },
+      {
+        "id": "08.02",
+        "label": "Lancey — Campaign installation",
+        "image": "assets/lancey-life-in-hell-back2datrap/02-campaign-installation.webp",
+        "thumbnail": "assets/lancey-life-in-hell-back2datrap/02-campaign-installation-thumb.webp",
+        "width": 1170,
+        "height": 1447,
+        "thumbnailFrame": "photo",
+        "thumbnailPosition": "50% 45%",
+        "captionType": "INSTALL"
+      },
+      {
+        "id": "08.03",
+        "label": "Lancey — Life in Hell — Hoodie front",
+        "image": "assets/lancey-life-in-hell-back2datrap/03-hoodie-front.webp",
+        "thumbnail": "assets/lancey-life-in-hell-back2datrap/03-hoodie-front-thumb.webp",
+        "width": 1800,
+        "height": 1800,
+        "thumbnailFrame": "product",
+        "thumbnailBackground": "#ECECEC",
+        "captionType": "HOODIE"
+      },
+      {
+        "id": "08.04",
+        "label": "Lancey — Life in Hell — Hoodie back",
+        "image": "assets/lancey-life-in-hell-back2datrap/04-hoodie-back.webp",
+        "thumbnail": "assets/lancey-life-in-hell-back2datrap/04-hoodie-back-thumb.webp",
+        "width": 1800,
+        "height": 1800,
+        "thumbnailFrame": "product",
+        "thumbnailBackground": "#ECECEC",
+        "captionType": "HOODIE"
+      },
+      {
+        "id": "08.05",
+        "label": "Lancey — Campaign artwork 01",
+        "image": "assets/lancey-life-in-hell-back2datrap/05-campaign-artwork.webp",
+        "thumbnail": "assets/lancey-life-in-hell-back2datrap/05-campaign-artwork-thumb.webp",
+        "width": 1440,
+        "height": 1440,
+        "thumbnailFrame": "artwork",
+        "captionType": "ARTWORK"
+      },
+      {
+        "id": "08.06",
+        "label": "Lancey — Campaign artwork 02",
+        "image": "assets/lancey-life-in-hell-back2datrap/06-campaign-artwork.webp",
+        "thumbnail": "assets/lancey-life-in-hell-back2datrap/06-campaign-artwork-thumb.webp",
+        "width": 1440,
+        "height": 1440,
+        "thumbnailFrame": "artwork",
+        "captionType": "ARTWORK"
+      },
+      {
+        "id": "08.07",
+        "label": "Lancey — Life in Hell — Album artwork",
+        "image": "assets/lancey-life-in-hell-back2datrap/07-life-in-hell-artwork.webp",
+        "thumbnail": "assets/lancey-life-in-hell-back2datrap/07-life-in-hell-artwork-thumb.webp",
+        "width": 1800,
+        "height": 1800,
+        "thumbnailFrame": "artwork",
+        "captionType": "ARTWORK"
+      },
+      {
+        "id": "08.08",
+        "label": "Lancey — Life in Hell — Tracklist",
+        "image": "assets/lancey-life-in-hell-back2datrap/08-life-in-hell-tracklist.webp",
+        "thumbnail": "assets/lancey-life-in-hell-back2datrap/08-life-in-hell-tracklist-thumb.webp",
+        "width": 1800,
+        "height": 1800,
+        "thumbnailFrame": "artwork",
+        "captionType": "TRACKS"
+      },
+      {
+        "id": "08.09",
+        "label": "Lancey — Life in Hell — Campaign artwork",
+        "image": "assets/lancey-life-in-hell-back2datrap/09-life-in-hell-campaign.webp",
+        "thumbnail": "assets/lancey-life-in-hell-back2datrap/09-life-in-hell-campaign-thumb.webp",
+        "width": 1440,
+        "height": 1440,
+        "thumbnailFrame": "artwork",
+        "captionType": "ARTWORK"
+      },
+      {
+        "id": "08.10",
+        "label": "Lancey — Back2DaTrap — Campaign artwork",
+        "image": "assets/lancey-life-in-hell-back2datrap/10-back2datrap-artwork.webp",
+        "thumbnail": "assets/lancey-life-in-hell-back2datrap/10-back2datrap-artwork-thumb.webp",
+        "width": 1500,
+        "height": 1500,
+        "thumbnailFrame": "artwork",
+        "captionType": "ARTWORK"
+      },
+      {
+        "id": "08.11",
+        "label": "Lancey — Mmm Hmm — Remix artwork",
+        "image": "assets/lancey-life-in-hell-back2datrap/11-mmm-hmm-remix.webp",
+        "thumbnail": "assets/lancey-life-in-hell-back2datrap/11-mmm-hmm-remix-thumb.webp",
+        "width": 1800,
+        "height": 1800,
+        "thumbnailFrame": "artwork",
+        "captionType": "REMIX"
+      },
+      {
+        "id": "08.12",
+        "label": "Lancey — Back2DaTrap — Tour poster",
+        "image": "assets/lancey-life-in-hell-back2datrap/12-tour-poster.webp",
+        "thumbnail": "assets/lancey-life-in-hell-back2datrap/12-tour-poster-thumb.webp",
+        "width": 1080,
+        "height": 1350,
+        "thumbnailFrame": "artwork",
+        "captionType": "TOUR"
+      }
+    ],
+    "role": "Creative direction + design",
+    "captionPrefix": "LANCEY"
+  },
+  {
+    "id": "09",
+    "title": "New York pop-up / First Degree 2",
+    "client": "Untitled",
+    "category": "Pop-up identity & merchandise",
+    "items": [
+      {
+        "id": "09.01",
+        "label": "Untitled — Pop-up poster",
+        "image": "assets/untitled-new-york-pop-up/01-pop-up-poster.webp",
+        "thumbnail": "assets/untitled-new-york-pop-up/01-pop-up-poster-thumb.webp",
+        "width": 1080,
+        "height": 1350,
+        "thumbnailFrame": "artwork",
+        "captionType": "POSTER"
+      },
+      {
+        "id": "09.02",
+        "label": "Untitled — Storefront",
+        "image": "assets/untitled-new-york-pop-up/02-storefront.webp",
+        "thumbnail": "assets/untitled-new-york-pop-up/02-storefront-thumb.webp",
+        "width": 1800,
+        "height": 1800,
+        "thumbnailFrame": "photo",
+        "captionType": "POPUP"
+      },
+      {
+        "id": "09.03",
+        "label": "Untitled — Black T-shirt — Front & back",
+        "image": "assets/untitled-new-york-pop-up/03-black-t-shirt.webp",
+        "thumbnail": "assets/untitled-new-york-pop-up/03-black-t-shirt-thumb.webp",
+        "width": 1800,
+        "height": 1800,
+        "thumbnailFrame": "product",
+        "captionType": "MERCH"
+      },
+      {
+        "id": "09.04",
+        "label": "Untitled — White T-shirt — Front & back",
+        "image": "assets/untitled-new-york-pop-up/04-white-t-shirt.webp",
+        "thumbnail": "assets/untitled-new-york-pop-up/04-white-t-shirt-thumb.webp",
+        "width": 1800,
+        "height": 1800,
+        "thumbnailFrame": "product",
+        "captionType": "MERCH"
+      }
+    ],
+    "role": "Creative direction + design",
+    "captionPrefix": "UNTITLED"
+  },
+  {
+    "id": "10",
+    "title": "Snap Inc. × Royal College of Art",
+    "client": "Snap Inc.",
+    "category": "Film",
+    "items": [
+      {
+        "id": "10.01",
+        "label": "Snap Inc. × Royal College of Art — Film",
+        "type": "video",
+        "embedUrl": "https://drive.google.com/file/d/1IY8JwuOwbJ-PsCbgPdHeNK66_Mb66bt_/preview",
+        "videoUrl": "https://drive.google.com/file/d/1IY8JwuOwbJ-PsCbgPdHeNK66_Mb66bt_/view?usp=sharing",
+        "thumbnail": "assets/snap-rca-partnership/01-film-thumbnail.webp",
+        "thumbnailFrame": "photo",
+        "thumbnailPosition": "50% 50%",
+        "captionType": "RCA_FILM"
+      }
+    ],
+    "captionPrefix": "SNAP"
+  }
+]
