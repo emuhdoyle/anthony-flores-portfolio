@@ -15,6 +15,45 @@ let indexOpen = false;
 let focusReturn = null;
 let lightboxItemId = null;
 let layoutAnimations = [];
+const aboutDialog = $('#about-dialog');
+const aboutHeader = aboutDialog.querySelector('.dialog-header');
+let aboutScrollY = 0;
+let aboutScrollAnchor = 0;
+let aboutScrollDirection = 0;
+let aboutScrollFrame = null;
+
+function revealAboutHeader() {
+  aboutHeader.classList.remove('is-hidden');
+  aboutScrollY = Math.max(0, aboutDialog.scrollTop);
+  aboutScrollAnchor = aboutScrollY;
+  aboutScrollDirection = 0;
+}
+
+// Hide after scrolling down; a small upward scroll brings navigation back.
+aboutDialog.addEventListener('scroll', () => {
+  if (aboutScrollFrame !== null) return;
+  aboutScrollFrame = requestAnimationFrame(() => {
+    aboutScrollFrame = null;
+    const maxScroll = Math.max(0, aboutDialog.scrollHeight - aboutDialog.clientHeight);
+    const y = Math.max(0, Math.min(aboutDialog.scrollTop, maxScroll));
+    const delta = y - aboutScrollY;
+    if (!delta) return;
+    const direction = Math.sign(delta);
+    if (direction !== aboutScrollDirection) {
+      aboutScrollAnchor = aboutScrollY;
+      aboutScrollDirection = direction;
+    }
+    if (y <= aboutHeader.offsetHeight) {
+      aboutHeader.classList.remove('is-hidden');
+    } else if (direction > 0 && y - aboutScrollAnchor >= 24) {
+      aboutHeader.classList.add('is-hidden');
+    } else if (direction < 0 && aboutScrollAnchor - y >= 12) {
+      aboutHeader.classList.remove('is-hidden');
+    }
+    aboutScrollY = y;
+  });
+}, {passive:true});
+aboutHeader.addEventListener('focusin', revealAboutHeader);
 
 function setHighlight(projectId) {
   activeProject = projectId;
@@ -57,6 +96,7 @@ function openDialog(dialog) {
   focusReturn = document.activeElement;
   dialog.showModal();
   dialog.scrollTop = 0;
+  if (dialog === aboutDialog) revealAboutHeader();
   dialog.querySelector('.close').focus({preventScroll:true});
 }
 
