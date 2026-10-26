@@ -7,7 +7,6 @@ const indexToggle = $('#index-toggle');
 const status = $('#live-status');
 const mobile = matchMedia('(max-width:760px)');
 const reducedMotion = matchMedia('(prefers-reduced-motion:reduce)');
-const previewImages = new Map();
 let projects = [];
 let tiles = [];
 let activeProject = null;
@@ -101,7 +100,7 @@ function openDialog(dialog) {
 }
 
 function getImage(item, thumbnail = false) {
-  return previewImages.get(item.id) || (thumbnail ? item.thumbnail || item.image : item.image);
+  return thumbnail ? item.thumbnail || item.image : item.image;
 }
 
 function openLightbox(item) {
@@ -152,43 +151,6 @@ function openProject(projectId) {
   if (project?.items.length) openLightbox(project.items[0]);
 }
 
-function updateTileImage(itemId) {
-  const tile = tiles.find(tile => tile.dataset.item === itemId);
-  const item = projects.flatMap(p => p.items).find(item => item.id === itemId);
-  if (!tile || !item) return;
-  const button = tile.querySelector('.thumbnail');
-  button.querySelector('img')?.remove();
-  const source = getImage(item, true);
-  if (source) {
-    const image = document.createElement('img');
-    image.src = source;
-    image.alt = '';
-    button.prepend(image);
-  }
-  $('#clear-images').hidden = !previewImages.size;
-}
-
-function previewFile(file,itemId) {
-  if (!file?.type.startsWith('image/')) {
-    status.textContent = 'Choose an image file for this placeholder.';
-    return;
-  }
-  const source = URL.createObjectURL(file);
-  const image = new Image();
-  image.onload = () => {
-    const old = previewImages.get(itemId);
-    if (old) URL.revokeObjectURL(old);
-    previewImages.set(itemId,source);
-    updateTileImage(itemId);
-    status.textContent = `Preview image added to ${itemId}. Image previews stay in this tab.`;
-  };
-  image.onerror = () => {
-    URL.revokeObjectURL(source);
-    status.textContent = 'This image could not be opened. Try a JPEG, PNG, WebP or GIF.';
-  };
-  image.src = source;
-}
-
 function createTile(item,p) {
   const tile = document.createElement('article');
   tile.className = 'tile';
@@ -224,12 +186,13 @@ function createTile(item,p) {
   button.addEventListener('blur',() => setHighlight(null));
   tile.addEventListener('pointerenter',e => {if (e.pointerType !== 'touch') setHighlight(p.id);});
   tile.addEventListener('pointerleave',() => {if (activeProject === p.id) setHighlight(null);});
-  tile.addEventListener('dragover',e => {e.preventDefault();tile.classList.add('drag-over');});
-  tile.addEventListener('dragleave',() => tile.classList.remove('drag-over'));
-  tile.addEventListener('drop',e => {
-    e.preventDefault();tile.classList.remove('drag-over');
-    previewFile(e.dataTransfer.files[0],item.id);
-  });
+  const source = getImage(item, true);
+  if (source) {
+    const image = document.createElement('img');
+    image.src = source;
+    image.alt = '';
+    button.prepend(image);
+  }
   tile.append(button,caption);
   return tile;
 }
@@ -254,17 +217,9 @@ function render() {
     button.addEventListener('click',() => openProject(p.id));
     return button;
   }));
-  projects.forEach(p => p.items.forEach(item => {if(item.image || item.thumbnail) updateTileImage(item.id);}));
 }
 
 indexToggle.addEventListener('click',() => setIndex(!indexOpen));
-$('#clear-images').addEventListener('click',() => {
-  const ids = [...previewImages.keys()];
-  previewImages.forEach(source => URL.revokeObjectURL(source));
-  previewImages.clear();
-  ids.forEach(updateTileImage);
-  status.textContent = 'All image previews cleared.';
-});
 document.querySelectorAll('[data-dialog]').forEach(button => button.addEventListener('click',() => openDialog(document.getElementById(button.dataset.dialog))));
 document.querySelectorAll('[data-close]').forEach(button => button.addEventListener('click',() => document.getElementById(button.dataset.close).close()));
 document.querySelectorAll('dialog').forEach(dialog => dialog.addEventListener('close',() => {
@@ -288,10 +243,10 @@ document.addEventListener('keydown',e => {
     setIndex(false);indexToggle.focus({preventScroll:true});
   }
 });
-fetch('wireframe-projects.json').then(r => {
-  if(!r.ok) throw new Error('Unable to load wireframe');
+fetch('projects.json').then(r => {
+  if(!r.ok) throw new Error('Unable to load project data');
   return r.json();
 }).then(data => {projects=data;render();}).catch(() => {
-  archive.innerHTML = '<p class="loading">The wireframe could not load. Please refresh the page.</p>';
+  archive.innerHTML = '<p class="loading">The work could not load. Please refresh the page.</p>';
   indexToggle.disabled = true;
 });

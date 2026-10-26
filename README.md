@@ -17,7 +17,7 @@ Open http://localhost:8000.
 - `dist/index.html`: navigation, About content and footer.
 - `dist/styles.css`: layout, responsive styles and typography.
 - `dist/app.js`: index interactions and lightbox controls.
-- `dist/wireframe-projects.json`: project names, captions, image paths and framing.
+- `dist/projects.json`: project names, captions, image paths and framing.
 - `dist/assets/`: artwork, thumbnail images and branding.
 - `dist/fonts/`: locally served Alte Haas Grotesk fonts.
 
@@ -25,6 +25,6 @@ Use the left and right arrow keys to browse the lightbox; Escape closes it. Cont
 
 ## Hosting
 
-Publish `dist` on a static host. There is no build command. A custom domain can be configured with the chosen hosting provider.
+GitHub Pages publishes `dist` automatically after changes are pushed to `main`. The workflow is defined in `.github/workflows/pages.yml`. There is no build step. A custom domain can be configured in the repository’s Pages settings.
 
 © Anthony Flores 2026. Portfolio artwork and supplied assets remain the property of their respective owners.
